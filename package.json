@@ -6,10 +6,11 @@
   "license": "MIT",
   "packageManager": "npm@10.8.2",
   "scripts": {
-    "dev": "astro dev",
     "build": "astro build",
+    "dev": "astro dev",
+    "format": "prettier -w ./src",
     "postbuild": "pagefind --site dist",
-    "format": "prettier -w ./src"
+    "serve": "serve dist"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.10",
@@ -60,6 +61,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "sass": "^1.93.3",
+    "serve": "^14.2.5",
     "tailwind-bootstrap-grid": "5.1.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.9.3",
